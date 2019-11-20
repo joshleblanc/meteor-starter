@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import { makeStyles } from '@material-ui/styles';
 import Routes from './Routes';
+import Drawer from './components/drawer/Drawer';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -20,6 +21,7 @@ export default () => {
     return(
         <div className={classes.root}>
             <Navbar />
+            <Drawer />
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Routes />
